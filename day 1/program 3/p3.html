@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements Example</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .content {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .block-level {
+            background-color: #ffcccb;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #d8d8d8;
+        }
+        .inline-example {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+        }
+        a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>HTML Block-Level and Inline Elements</h1>
+    </header>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Understanding Block-Level and Inline Elements</h2>
+
+        <!-- Block-level elements -->
+        <div class="block-level">
+            <h3>Block-level Element: <code>&lt;div&gt;</code></h3>
+            <p>Block-level elements take up the full width of their container and typically start on a new line. They are used for larger structural sections of a webpage.</p>
+        </div>
+
+        <div class="block-level">
+            <h3>Block-level Element: <code>&lt;section&gt;</code></h3>
+            <p>This is an example of a <code>&lt;section&gt;</code> element. It is a block-level element used to define sections of content on a page.</p>
+        </div>
+
+        <!-- Inline elements -->
+        <div class="block-level">
+            <h3>Inline Elements:</h3>
+            <p>Inline elements only take up as much width as necessary and do not cause a new line to be created. Examples of inline elements include <span class="inline-example"><code>&lt;span&gt;</code></span> and <span class="inline-example"><code>&lt;a&gt;</code></span>.</p>
+            <p>For instance, here's an example of a link: <a href="https://www.example.com">Visit Example</a> inside a paragraph.</p>
+        </div>
+
+        <!-- Combining block-level and inline elements -->
+        <div class="block-level">
+            <h3>Block-level with Inline Elements</h3>
+            <p>In the following example, we will use both block-level and inline elements within the same section:</p>
+            <div>
+                <p>This is a <span class="inline-example">simple inline span</span> inside a block-level <code>&lt;div&gt;</code>. Notice how the inline element does not cause the paragraph text to break into a new line.</p>
+                <p>Also, here's another <span class="inline-example">inline span</span> in the middle of a <a href="https://www.example.com" target="_blank">link</a>.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
